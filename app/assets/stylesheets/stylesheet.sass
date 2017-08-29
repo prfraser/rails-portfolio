@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Orbitron')
+$nav-font: 'Orbitron', sans-serif
+$title-font:'Droid Sans Mono', monospace
+$c1: #261c1a
+$c2: #828282
+$c3: #52393f
+$c4: #86901f
+$c5: #394712
+
+body
+  margin: 5px
+  background-color: black
+
+// --------------------- grid system ------------------------
+
+.grid-wrapper
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  grid-gap: 10px
+  grid-auto-rows: 45px minmax(100px, auto)
+  div
+    border-radius: 5px
+
+// ----------------------------------------------------------
+// --------------- Header / navbar styling -----------------
+
+.nav-container
+  grid-column: 1 / 6
+  grid-row: 1
+  width: 100%
+  top: 0
+  transition: top 0s ease-in-out
+  display: flex
+  flex-direction: row-reverse
+  background-color: $c1
+  border-radius: 5px
+  a
+    text-decoration: none
+    padding-right: 15px
+    padding-top: 60px
+    color: white
+
+#nav-down
+  border: none
+  padding-top: 10px
+  .nav-top-link
+    font-family: $nav-font
+
+.sideItem-container
+  position: fixed
+  top: 5px
+  right: -200px
+  transition: right 0.1s ease-in-out
+  display: flex
+  flex-direction: column
+  a
+    color: white
+    text-decoration: none
+
+.sideItem-out
+  right: 5px
+  .nav-side-link
+    padding-bottom: 15px
+    font-family: $nav-font
+
+.sideItem-in
+  display: flex
+  flex-direction: column
+
+.nav-link
+  font-size: 20px
+  letter-spacing: 3px
+
+.nav-link:hover
+  text-decoration: line-through
+
+// -----------------------------------------------------------
+
+// ------------------ Index Page ----------------------------
+.header-container
+  grid-column: 1 / 6
+  grid-row: 2
+  height: 700px
+  font-family: $title-font
+  background-color: $c5
+  .header
+    padding-left: 30px
+    h1
+      padding-top: 100px
+      font-size: 80px
+      color: white
+    p
+      font-size: 25px
+      color: white
+
+.example-one
+  grid-column: 1 / 3
+  grid-row: 3 / 8
+  background-color: $c3
+
+.example-two
+  grid-column: 3 / 6
+  grid-row: 3 / 8
+  background-color: $c4
+
+.example-three
+  grid-column: 1 / 4
+  grid-row: 8 / 12
+  background-color: $c2
+
+.example-four
+  grid-column: 4 / 6
+  grid-row: 8 / 16
+  background-color: $c1
+
+.example-five
+  grid-column: 1 / 4
+  grid-row: 12 / 16
+  background-color: $c3
