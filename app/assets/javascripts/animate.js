@@ -3,7 +3,7 @@
 var didScroll;
 var lastScrollTop = 0;
 var delta = 1;
-var navbarHeight = 30;
+var navbarHeight = 300;
 
 $(window).scroll(function(event){
     didScroll = true;
