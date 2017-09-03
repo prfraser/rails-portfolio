@@ -26,101 +26,37 @@ body
     div
       border-radius: 5px
 
-  // ------------------ Navbar styling -----------------------
-
   .nav-container
     grid-column: 1 / 6
     grid-row: 1
     width: 100%
-    transition: top 0s ease-in-out
-    display: flex
-    flex-direction: row-reverse
-    background-color: $c1
-    border-radius: 5px
     a
       padding-right: 15px
-      color: $c5
-
-  #nav-top
-    border: none
-    padding-top: 10px
-    .nav-top-link
-      font-family: $nav-font
-
-  .sideItem-container
-    position: fixed
-    top: 5px
-    right: -200px
-    transition: right 0.1s ease-in-out
-    display: flex
-    flex-direction: column
-    a
-      color: $c5
-
-  .sideItem-out
-    right: 5px
-    .nav-side-link
-      padding-bottom: 15px
-      font-family: $nav-font
-
-  .sideItem-in
-    display: flex
-    flex-direction: column
-
-  .nav-link
-    font-size: 20px
-    letter-spacing: 5px
-
-  .nav-link:hover
-    text-decoration: line-through
-
-  // -----------------------------------------------------------
 
   .header-container
     grid-column: 1 / 6
     grid-row: 2 / 8
-    background-color: $c2
-    display: flex
-    align-items: center
-    .header
-      padding-left: 5%
-      h1
-        font-size: 5em
-        color: $c5
-        font-family: $title-font
-      p
-        font-size: 1em
-        color: $c5
-        font-family: $text-font
 
   .example-one
     grid-column: 1 / 3
     grid-row: 8 / 12
-    background-color: $c1
 
   .example-two
     grid-column: 3 / 6
     grid-row: 8 / 12
-    background-color: $c3
-    display: flex
-    align-items: flex-end
-    justify-content: center
 
   .example-three
     grid-column: 1 / 4
     grid-row: 12 / 16
-    background-color: $c2
 
   .example-four
     grid-column: 4 / 6
     grid-row: 12 / 22
-    background-color: $c1
 
   .example-five
     grid-column: 1 / 4
     grid-row: 16 / 22
-    background-color: $c4
-
+    
 // -------------------- Phone Screen ---------------------
 
 @media only screen and (max-width: 768px)
@@ -132,106 +68,120 @@ body
     div
       border-radius: 5px
 
-  // --------------- Navbar styling -----------------
+  #nav-top
+    display: flex
+    justify-content: space-between
+    .nav-top-link
+      font-size: 1em
 
   .nav-container
     grid-column: 1
     grid-row: 1
-    width: 100%
-    top: 0
-    transition: top 0s ease-in-out
-    background-color: $c1
-    border-radius: 5px
-    a
-      color: $c5
-
-  #nav-top
-    border: none
-    padding-top: 10px
-    display: flex
-    justify-content: space-between
-    .nav-top-link
-      font-family: $nav-font
-      font-size: 1em
-      a
-        color: $c5
-
-  .sideItem-container
-    position: fixed
-    top: 5px
-    right: -200px
-    transition: right 0.1s ease-in-out
-    display: flex
-    flex-direction: column
-    a
-      color: $c5
-
-  .sideItem-out
-    right: 5px
-    .nav-side-link
-      padding-bottom: 15px
-      font-family: $nav-font
-      font-size: 1em
-
-  .sideItem-in
-    display: flex
-    flex-direction: column
-
-  .nav-link
-    font-size: 20px
-    letter-spacing: 5px
-
-  .nav-link:hover
-    text-decoration: line-through
-
-  // -----------------------------------------------------------
 
   .header-container
     grid-column: 1
     grid-row: 2 / 6
-    background-color: $c2
-    display: flex
-    align-items: center
-    .header
-      padding-left: 5%
-      h1
-        font-size: 5em
-        color: $c5
-        font-family: $title-font
-      p
-        font-size: 1em
-        color: $c5
-        font-family: $text-font
 
   .example-one
     grid-column: 1
     grid-row: 6 / 8
-    background-color: $c1
 
   .example-two
     grid-column: 1
     grid-row: 8 / 12
-    background-color: $c3
-    display: flex
-    align-items: flex-end
-    justify-content: center
 
   .example-three
     grid-column: 1
     grid-row: 12 / 16
-    background-color: $c2
 
   .example-four
     grid-column: 1
     grid-row: 16 / 20
-    background-color: $c1
 
   .example-five
     grid-column: 1
     grid-row: 20 / 28
-    background-color: $c4
 
-// ----------------------------------------------------------
+// ------------------ Navbar styling -----------------------
+
+.nav-container
+  transition: top 0s ease-in-out
+  display: flex
+  flex-direction: row-reverse
+  background-color: $c1
+  border-radius: 5px
+  a
+    color: $c5
+
+#nav-top
+  border: none
+  padding-top: 10px
+  .nav-top-link
+    font-family: $nav-font
+
+.sideItem-container
+  position: fixed
+  top: 5px
+  right: -200px
+  transition: right 0.1s ease-in-out
+  display: flex
+  flex-direction: column
+  a
+    color: $c5
+
+.sideItem-out
+  right: 5px
+  .nav-side-link
+    padding-bottom: 15px
+    font-family: $nav-font
+
+.sideItem-in
+  display: flex
+  flex-direction: column
+
+.nav-link
+  font-size: 20px
+  letter-spacing: 5px
+
+.nav-link:hover
+  text-decoration: line-through
+
+// -----------------------------------------------------------
+
+.header-container
+  background-color: $c2
+  display: flex
+  align-items: center
+  .header
+    padding-left: 5%
+    h1
+      font-size: 5em
+      color: $c5
+      font-family: $title-font
+    p
+      font-size: 1em
+      color: $c5
+      font-family: $text-font
+
+.example-one
+  background-color: $c1
+
+.example-two
+  background-color: $c3
+  display: flex
+  align-items: flex-end
+  justify-content: center
+
+.example-three
+  background-color: $c2
+
+.example-four
+  background-color: $c1
+
+.example-five
+  background-color: $c4
+
+
 
 
 // ------------------------- Buttons -------------------------
