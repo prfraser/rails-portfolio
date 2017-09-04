@@ -53,6 +53,8 @@ body
   .example-one
     grid-column: 1 / 3
     grid-row: 13 / 19
+    *
+      margin-left: 15px
 
   .example-two
     grid-column: 3 / 6
@@ -114,6 +116,7 @@ body
   .example-one
     grid-column: 1
     grid-row: 7 / 11
+    text-align: center
 
   .example-two
     grid-column: 1
@@ -214,6 +217,13 @@ body
 
 .example-one
   background-color: $c2
+  display: flex
+  flex-direction: column
+  h2
+    font-family: $nav-font
+    letter-spacing: 2px
+  p
+    font-family: $text-font
 
 .example-two
   background-color: $c3
@@ -229,9 +239,6 @@ body
 
 .example-five
   background-color: $c4
-
-
-
 
 // ------------------------- Buttons -------------------------
 .main-button
