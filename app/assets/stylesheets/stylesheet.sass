@@ -3,11 +3,11 @@ $nav-font: 'Orbitron', sans-serif
 $title-font: 'Megrim', cursive
 $text-font:'Droid Sans Mono', monospace
 
-$c1: #EDD27B
-$c2: #FFAC59
-$c3: #D17238
-$c4: #D65E46
-$c5: #421F13
+$c1: #c1ccd4
+$c2: #fbe5ad
+$c3: #fdb360
+$c4: #8f7d75
+$c5: black
 
 body
   margin: 5px
@@ -21,7 +21,7 @@ body
   .grid-wrapper
     display: grid
     grid-template-columns: repeat(5, 1fr)
-    grid-gap: 10px
+    grid-gap: 5px
     grid-auto-rows: 45px minmax(45px, auto)
     div
       border-radius: 5px
@@ -39,34 +39,36 @@ body
 
   .header-container
     grid-column: 1 / 6
-    grid-row: 2 / 10
+    grid-row: 2 / 12
 
   .skills-container
     grid-column: 1 / 6
-    grid-row: 10 / 11
+    grid-row: 12 / 13
     display: flex
     justify-content: space-around
     align-items: center
+    p
+      font-size: 1em
 
   .example-one
     grid-column: 1 / 3
-    grid-row: 11 / 14
+    grid-row: 13 / 19
 
   .example-two
     grid-column: 3 / 6
-    grid-row: 11 / 14
+    grid-row: 13 / 19
 
   .example-three
     grid-column: 1 / 4
-    grid-row: 14 / 18
+    grid-row: 19 / 23
 
   .example-four
     grid-column: 4 / 6
-    grid-row: 14 / 22
+    grid-row: 19 / 30
 
   .example-five
     grid-column: 1 / 4
-    grid-row: 18 / 22
+    grid-row: 23 / 30
 
 // -------------------- Phone Screen ---------------------
 
@@ -106,6 +108,8 @@ body
     justify-content: space-around
     flex-wrap: wrap
     align-items: center
+    p
+      font-size: 0.8em
 
   .example-one
     grid-column: 1
@@ -179,18 +183,16 @@ body
 // -------------------- Boxes -----------------------
 
 .header-container
-  background-image: url('michal-grosicki-221225.jpg')
-  background-attachment: fixed
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
+  // background-image: url('michal-grosicki-221225.jpg')
+  // background-attachment: fixed
+  // background-position: center
+  // background-repeat: no-repeat
+  // background-size: cover
+  background-color: $c2
   display: flex
   align-items: center
   .header
     padding: 1%
-    background-color: $c1
-    border-radius: 10px
-    opacity: 0.9
     h1
       color: $c5
       font-family: $title-font
@@ -202,11 +204,11 @@ body
       font-family: $text-font
 
 .skills-container
-  background-color: $c4
+  background-color: $c1
   p
     font-family: $text-font
+    text-transform: uppercase
     color: $c5
-    font-size: 1em
     padding: 0px
     margin: 0px
 
