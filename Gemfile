@@ -7,6 +7,10 @@ end
 
 
 gem "font-awesome-rails"
+gem 'mail_form'
+gem 'simple_form'
+gem 'bootstrap-sass'
+gem 'letter_opener_web'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
