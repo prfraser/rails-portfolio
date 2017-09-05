@@ -7,11 +7,11 @@ $c1: #c1ccd4
 $c2: #fbe5ad
 $c3: #6c7881
 $c4: #8f7d75
-$c5: black
+$c5: #1B191B
 
 body
   margin: 5px
-  background-color: $c5
+  background-color: $c2
 
 // --------------------- GRID SYSTEM ------------------------
 
@@ -34,7 +34,7 @@ body
       padding-right: 15px
 
   .header
-    background-image: image-url('logo5')
+    background-image: image-url('HQ2')
     background-position: center
     background-size: cover
     h1
@@ -177,10 +177,10 @@ body
   flex-direction: row-reverse
   justify-content: space-between
   align-items: center
-  background-color: $c1
+  background-color: $c5
   border-radius: 5px
   a
-    color: $c5
+    color: $c2
 
 #nav-top
   border: none
@@ -195,16 +195,18 @@ body
   display: flex
   flex-direction: column
   a
-    color: $c5
+    color: $c1
 
 .sideItem-out
   right: 5px
   padding: 5px 5px 0 5px
-  background-color: $c1
+  background-color: $c5
   border-radius: 5px
   opacity: 0.7
   a
     padding: 0
+    color: $c2
+    text-decoration: underline
   .nav-side-link
     font-family: $nav-font
 
@@ -226,26 +228,15 @@ body
   display: flex
   align-items: center
   justify-content: center
-  .img-responsive
-    border-radius: 5px
   .header
     background-attachment: fixed
     background-repeat: no-repeat
-    width: 95%
-    height: 95%
-    h1
-      color: $c5
-      font-family: $title-font
-      margin-top: 10px
-      margin-bottom: 10px
-    p
-      font-size: 1em
-      color: $c5
-      font-family: $text-font
+    width: 100%
+    height: 100%
 
 #icon-nav-container
   a
-    color: black
+    color: $c1
     font-family: $text-font
     padding-left: 15px
   a:hover
@@ -253,27 +244,30 @@ body
 
 
 .skills-container
-  background-color: $c1
+  background-color: $c5
   p
     font-family: $text-font
     text-transform: uppercase
-    color: $c5
+    color: $c1
     padding: 0px
     margin: 0px
 
 .example-one
-  background-color: $c2
+  background-color: $c5
   display: flex
   flex-direction: column
   justify-content: center
   h2
     font-family: $nav-font
     letter-spacing: 2px
+    color: $c2
   p
     font-family: $text-font
+    color: $c1
+    padding-right: 15px
 
 .example-two
-  background-color: $c2
+  background-color: $c5
   display: flex
   align-items: center
   justify-content: center
@@ -282,13 +276,13 @@ body
     height: auto
 
 .example-three
-  background-color: $c1
+  background-color: $c5
 
 .example-four
-  background-color: $c1
+  background-color: $c5
 
 .example-five
-  background-color: $c2
+  background-color: $c5
 
 // ------------------------- Buttons -------------------------
 .main-button
@@ -306,7 +300,7 @@ body
 // ------------------------ Contact Page -----------------------
 
 .contact-header-container
-  background-color: $c2
+  background-color: $c5
   display: flex
   flex-direction: flex-start
   align-items: center
@@ -315,5 +309,7 @@ body
     font-family: $title-font
 
 .contact-form-container
-  background-color: $c1
+  background-color: $c2
+  font-family: $text-font
+
 
