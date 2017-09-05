@@ -7,6 +7,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
+      redirect_to '/contacts', notice: "Email sent successfully."
     else
       render :new
     end

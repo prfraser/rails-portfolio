@@ -11,6 +11,11 @@
 					<%= f.submit 'Send message', class: 'btn btn-primary' %>
 				</div>
 			<% end %>
+			<% if flash[:notice].present? %>
+		      <div class="alert alert-success">
+		        <%= flash[:notice] %>
+		      </div>
+		    <% end %>
 		</div>
 	</div>
 </div>
