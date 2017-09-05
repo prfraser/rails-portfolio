@@ -11,7 +11,10 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'letter_opener_web'
-
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
+gem 'bootstrap_form'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'

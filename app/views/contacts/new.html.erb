@@ -1,19 +1,16 @@
 <div class="contact-header-container">
-	<div class="contact-header">
-		<h1>Contact</h1>
-	</div>
-</div>
-<div class="contact-form-container">
-	<div class="container">
-	<h1>Contact</h1>
-	<%= simple_form_for @contact, html: { class: 'form-horizontal' }, url: new_contact_path do |f| %>
-		<%= f.input :name, required: true %>
-		<%= f.input :email, required: true %>
-		<%= f.input :message, as: :text, required: false, input_html: { rows: 10 }, hint: 'Max 2000 characters' %>
+	<div class="contact-form-container">
+		<div class="container">
+			<h1>Contact</h1>
+			<%= bootstrap_form_for @contact, html: { class: 'form-group' }, url: new_contact_path do |f| %>
+				<%= f.text_field :name, required: true %>
+				<%= f.email_field :email, required: true %>
+				<%= f.text_field :message, as: :text, required: false, input_html: { rows: 10 }, hint: 'Max 2000 characters' %>
 
-		<div class="form-actions">
-			<%= f.button :submit, 'Send message', class: 'btn btn-primary' %>
+				<div class="form-actions">
+					<%= f.submit 'Send message', class: 'btn btn-primary' %>
+				</div>
+			<% end %>
 		</div>
-	<% end %>
-</div>
+	</div>
 </div>
