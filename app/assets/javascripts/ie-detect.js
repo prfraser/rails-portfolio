@@ -3,5 +3,5 @@ if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgen
   alert("Please dont use IE.");
   // document.body.className = "iestyle";
   // document.getElementById("bodyid").className = "iestyle";
-  $('body').addClass('iestyle');
+  // $('body').addClass('iestyle');
 }
