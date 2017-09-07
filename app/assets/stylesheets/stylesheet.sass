@@ -5,8 +5,6 @@ $text-font:'Droid Sans Mono', monospace
 
 $c1: #c1ccd4
 $c2: #fbe5ad
-$c3: #6c7881
-$c4: #8f7d75
 $c5: #1B191B
 
 body
@@ -22,13 +20,13 @@ body
     display: grid
     grid-template-columns: repeat(5, 1fr)
     grid-gap: 5px
-    grid-auto-rows: 50px minmax(50px, auto)
+    grid-template-rows: repeat(5, 18vh)
     div
       border-radius: 5px
 
   .nav-container
     grid-column: 1 / 6
-    grid-row: 1
+    grid-row: 1 / 2
     width: 100%
     a
       padding-right: 15px
@@ -135,7 +133,7 @@ body
     display: grid
     grid-template-columns: 1fr minmax(500px)
     grid-gap: 5px
-    grid-auto-rows: 45px minmax(45px, auto)
+    grid-template-rows: repeat(5, 18vh)
     div
       border-radius: 5px
 
@@ -215,10 +213,11 @@ body
 
   #icon-nav-container
     grid-column: 1
-    grid-row: 11
-    width: 100%
-    text-align: center
-    z-index: 1
+    grid-row: 2/3
+    span
+      opacity: 0
+    #linkedin-icon
+      margin-left: -80px
 
   .contact-header-container
     grid-column: 1
@@ -277,6 +276,9 @@ body
 
 .nav-link:hover
   text-decoration: line-through
+
+#icon-nav-container
+  z-index: 1
 
 // -------------------- Index Page -----------------------
 
@@ -375,19 +377,6 @@ body
     height: 2px
     width: 40%
     background-color: $c2
-
-// ------------------------- Buttons -------------------------
-.main-button
-  width: 30%
-  height: 2em
-  background-color: inherit
-  border: 2px solid $c5
-  border-radius: 5px
-  margin-bottom: 3%
-  transition: 0.2s
-
-.main-button:hover
-  background-color: $c5
 
 // ------------------------ Contact Page -----------------------
 
