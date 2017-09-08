@@ -2,7 +2,7 @@
 	<div class="contact-form-container">
 		<div class="container">
 			<h1>Contact</h1>
-			<%= bootstrap_form_for @contact, html: { class: 'form-group' }, url: new_contact_path do |f| %>
+			<%= bootstrap_form_for @contact, html: { class: 'form-group' }, url: contact_new_path do |f| %>
 				<%= f.text_field :name, required: true %>
 				<%= f.email_field :email, required: true %>
 				<%= f.text_field :message, as: :text, required: false, input_html: { rows: 10 }, hint: 'Max 2000 characters' %>

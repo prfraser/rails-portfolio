@@ -15,6 +15,10 @@ gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails"
 gem 'bootstrap_form'
+gem 'sitemap_generator'
+gem 'meta-tags'
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
