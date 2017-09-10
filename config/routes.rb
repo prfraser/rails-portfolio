@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'contact/new'
+  resources :contact, only: [:new, :create], path_names: { new: '' }
   root 'welcome#index'
 end
