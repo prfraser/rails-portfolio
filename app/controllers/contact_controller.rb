@@ -9,6 +9,6 @@ class ContactController < ApplicationController
 
   def create
   	redirect_to new_contact_path
-  	flash[:notice] = "Email sent. I'll get back to you as soon as possible"
+  	flash[:notice] = "Email sent. I'll get back to you ASAP!"
   end
 end
