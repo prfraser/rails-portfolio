@@ -69,12 +69,17 @@ body
     grid-row: 21 / 31
     display: flex
     flex-wrap: wrap
+    .image-caption
+      display: inline-block
+    .linebreaker
+      margin-bottom: 5px
     .example-two-box1
       width: 50%
       height: 50%
       border-radius: 5px 0 0 0
-      .example-two-imagebox1
+      img
         width: 100%
+        border-radius: 5px 0 0 0
       .example-two-imagebox1:hover
         opacity: 0.2
     .example-two-box1:hover .image-caption
@@ -83,9 +88,9 @@ body
       width: 50%
       height: 50%
       border-radius: 0 5px 0 0
-      .example-two-imagebox2
-        border-radius: 0
+      img
         width: 100%
+        border-radius: 0 5px 0 0
       .example-two-imagebox2:hover
         opacity: 0.2
     .example-two-box2:hover .image-caption
@@ -94,8 +99,8 @@ body
       width: 50%
       height: 50%
       border-radius: 0 0 0 5px
-      .example-two-imagebox3
-        border-radius: 0
+      img
+        border-radius: 0 0 0 5px
         width: 100%
       .example-two-imagebox3:hover
         opacity: 0.2
@@ -105,8 +110,8 @@ body
       width: 50%
       height: 50%
       border-radius: 0 0 5px 0
-      .example-two-imagebox4
-        border-radius: 0
+      img
+        border-radius: 0 0 5px 0
         width: 100%
       .example-two-imagebox4:hover
         opacity: 0.2
@@ -190,21 +195,21 @@ body
     grid-row: 21 / 29
     display: flex-start
     flex-direction: column
-    .example-two-imagebox1:active
+    .example-two-imagebox1
       opacity: 0.2
-    .example-two-box1:active .image-caption
+    .image-caption
       opacity: 1
-    .example-two-imagebox2:active
+    .example-two-imagebox2
       opacity: 0.2
-    .example-two-box2:active .image-caption
+    .image-caption
       opacity: 1
-    .example-two-imagebox3:active
+    .example-two-imagebox3
       opacity: 0.2
-    .example-two-box3:active .image-caption
+    .image-caption
       opacity: 1
-    .example-two-imagebox4:active
+    .example-two-imagebox4
       opacity: 0.2
-    .example-two-box4:active .image-caption
+    .image-caption
       opacity: 1
 
     img
@@ -356,29 +361,36 @@ body
 
 .example-two-box1
   position: relative
+  display: flex
+  justify-content: center
+  align-items: center
 
 .example-two-box2
   position: relative
+  display: flex
+  justify-content: center
+  align-items: center
 
 .example-two-box3
   position: relative
+  display: flex
+  justify-content: center
+  align-items: center
 
 .example-two-box4
   position: relative
+  display: flex
+  justify-content: center
+  align-items: center
 
 .image-caption
   position: absolute
-  top: 50%
-  display: flex
-  flex-direction: column
-  align-items: center
-  width: 100%
   opacity: 0
   p
     color: $c2
   .linebreaker
     height: 2px
-    width: 40%
+    width: 100%
     background-color: $c2
 
 // ------------------------ Contact Page -----------------------
